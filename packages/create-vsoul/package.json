@@ -1,0 +1,32 @@
+{
+  "name": "create-vsouls",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "vsouls",
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "create-vsouls": "index.js",
+    "cvp": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "devDependencies": {
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.7.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

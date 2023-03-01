@@ -1,0 +1,25 @@
+{
+  "name": "@vsouls/vsouls-monorepo",
+  "private": true,
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "description": "Learning is a way of life.",
+  "main": "index.js",
+  "scripts": {
+    "cvp": "esno ./packages/create-vsouls -- project-demo",
+    "dev": "pnpm -r --parallel --filter='./packages/create-vsouls' run dev"
+  },
+  "keywords": [
+    "fronted"
+  ],
+  "author": "vsouls",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "@types/minimist": "^1.2.2",
+    "@types/prompts": "^2.4.2",
+    "typescript": "^4.9.5",
+    "unbuild": "^1.1.2"
+  }
+}
