@@ -1,6 +1,6 @@
 {
   "name": "create-vsouls",
-  "version": "1.0.0",
+  "version": "0.0.1-alpha.1",
   "type": "module",
   "author": "vsouls",
   "license": "MIT",
@@ -15,7 +15,9 @@
     "dist"
   ],
   "scripts": {
-    "dev": "unbuild --stub"
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "prepublishOnly": "pnpm build"
   },
   "engines": {
     "node": "^14.18.0 || >=16.0.0"

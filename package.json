@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "cvp": "esno ./packages/create-vsouls -- project-demo",
-    "dev": "pnpm -r --parallel --filter='./packages/create-vsouls' run dev"
+    "dev:cv": "pnpm -r --parallel --filter=\"./packages/create-vsouls\" run dev",
+    "build": "pnpm -r --parallel --filter=\"./packages/*\" run build"
   },
   "keywords": [
     "fronted"
